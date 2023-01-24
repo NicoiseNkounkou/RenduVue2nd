@@ -37,7 +37,7 @@ export default createStore({
       state.products.push(product)
     },
     display(state){
-      state.products.push()
+      state.products.values
     }
   },
   actions: {

@@ -13,8 +13,8 @@ export default {
     ], 
 
     methods: {
-        increment (){
-            this.$store.commit('increment')
+        display (){
+            this.$store.state('display')
         }
     }
 }

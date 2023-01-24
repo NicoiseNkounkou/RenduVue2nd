@@ -16,7 +16,7 @@ export default {
     },
 
     computed : {
-        products(){
+        product(){
             return this.$store.state.products
         }
 },
