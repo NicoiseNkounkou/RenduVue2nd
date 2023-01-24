@@ -1,4 +1,4 @@
-<template lang="">
+<!-- <template lang="">
 
     <CarteProduct :product="formData"/>
 
@@ -79,4 +79,4 @@ button {
     font-weight: bold;
 }
     
-</style>
+</style> -->

@@ -36,6 +36,9 @@ export default createStore({
     ajoutProduct(state, product){
       state.products.push(product)
     },
+    display(state){
+      state.products.push()
+    }
   },
   actions: {
   },

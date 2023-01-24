@@ -10,7 +10,13 @@ export default {
     name: 'CarteProduct', 
     props: [
         'product'
-    ]
+    ], 
+
+    methods: {
+        increment (){
+            this.$store.commit('increment')
+        }
+    }
 }
 </script>
 <style scoped >

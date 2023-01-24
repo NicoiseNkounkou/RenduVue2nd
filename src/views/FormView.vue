@@ -25,7 +25,11 @@
 export default {
     name: 'FormView',
  
-
+    computed : {
+        products(){
+            return this.$store.state.products
+        }
+},
     
      data(){
         return {
@@ -40,7 +44,8 @@ export default {
         ajoutProduct(){
                     if(this.formData.name == '' || this.formData.price == null|| this.formData.stock == null )  return
                     if(this.$store.state.products.find(product => product.name == this.formData.name)) return
-                    this.$store.commit('ajoutProduct')
+                    this.$store.commit('ajoutProduct', this.formData)
+                    // console.log(ajoutProduct)
                     this.formData ={ 
                             name: '',
                             price: null,
